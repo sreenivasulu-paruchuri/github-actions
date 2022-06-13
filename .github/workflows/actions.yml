@@ -1,0 +1,12 @@
+name: Actions Workflows
+
+on: [push]
+
+jobs:
+  run-git-hub-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: simple javascript actions
+        uses: actions/hello-world-javascript-action@v1.1
+        with:
+          who-to-great: sreenivas
