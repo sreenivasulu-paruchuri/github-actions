@@ -16,3 +16,10 @@ jobs:
               run: pwd    
             - name: php version
               run: php -v  
+    
+    run-windows-commands:
+        runs-on: windows-latest
+        steps:
+            - name: Current windows Directory
+              run: pwd
+              shell: bash
