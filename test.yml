@@ -1,0 +1,24 @@
+name: sreenivas
+age: 32
+address: "Hyderbad, India"
+active : true
+key: 
+   "key": "value"
+   "key3": 
+       "key": "value"
+       "key2": "value"
+jsonObject: {key1:value, key2:value2}  
+phpArray: 
+    - item1
+    - item2 
+    - {key:valie}
+jsonArray: [1,2,4]
+objectArray: 
+    - key: value 
+      key2: value2
+    - key2: valie2
+      key3: value3 
+longtext: |
+    dfkdjfkdfj djfkafjda;kjfkaf 
+    kdflajskfjdk 
+    sdffff     
