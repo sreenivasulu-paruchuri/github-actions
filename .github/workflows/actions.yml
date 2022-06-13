@@ -9,4 +9,4 @@ jobs:
       - name: simple javascript actions
         uses: actions/hello-world-javascript-action@v1.1
         with:
-          who-to-great: sreenivas
+          who-to-greet: sreenivas
