@@ -12,4 +12,24 @@ jobs:
         with:
           who-to-greet: sreenivas
       - name: Log output of javascript Action
-        run: echo "${{ steps.simple_javacript_action }}"   
+        run: echo "${{ steps.simple_javacript_action.outputs.time }}"  
+      - name: Checkout brightcove Repo
+        uses: actions/checkout@v3
+        with:
+          ref: 1.1.x
+          path: brightcove
+          repository: sreenivasulu-paruchuri/brightcove_dynamic_ingest 
+      - name: List File
+        run: |
+          pwd
+          ls -al    
+      - name: Checkout Current Repo
+        uses: actions/checkout@v3
+        with:
+          ref: main
+          path: github_actions
+      - name: List File
+        run: |
+          pwd
+          ls -al     
+        
