@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: simple javascript actions
+        id: simple_javacript_action
         uses: actions/hello-world-javascript-action@v1.1
         with:
           who-to-greet: sreenivas
+      - name: Log output of javascript Action
+        run: echo "${{ steps.simple_javacript_action }}"   
