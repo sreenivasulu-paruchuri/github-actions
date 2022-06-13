@@ -10,5 +10,9 @@ jobs:
               run: echo "First Git Hub Actions Command"
             - name: multiline script
               run: |
-                 node -v
-                 npm -v  
+                node -v
+                npm -v  
+            - name: current Directory
+              run: pwd    
+            - name: php version
+              run: php -v  
