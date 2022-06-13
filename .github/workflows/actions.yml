@@ -16,10 +16,6 @@ jobs:
           pwd
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
-          # echo "${{ github.token }}"
-          # git clone git@github.com:$GITHUB_REPOSITORY.git
-          # git checkout $GITHUB_SHA
-          # ls -l
 
       - name: Log output of javascript Action
         run: echo "${{ steps.simple_javacript_action.outputs.time }}"  
@@ -27,7 +23,6 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: 1.1.x
-          token: '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'
           path: brightcove
           repository: sreenivasulu-paruchuri/brightcove_dynamic_ingest 
       - name: List File
@@ -39,7 +34,6 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: main
-          token: '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'
           path: github_actions
       - name: List File
         run: |
